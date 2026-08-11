@@ -1,4 +1,4 @@
-# #include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int choice;
@@ -54,3 +54,7 @@ int main() {
                 printf("Invalid choice!\n");
         }
 
+    } while (choice != 6);
+
+    return 0;
+}
