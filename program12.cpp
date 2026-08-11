@@ -29,4 +29,4 @@ int main()
     delete[] arr;   // Free dynamically allocated memory
 
     return 0;
-}
+}t
