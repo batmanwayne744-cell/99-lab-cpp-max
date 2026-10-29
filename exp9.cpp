@@ -9,7 +9,9 @@ public:
     virtual double calculateArea() const = 0;
 
     // Virtual member function to calculate the perimeter (pure virtual function)
-    virtual double calculatePerimeter() const = 0;
+    virtual double calculatePerimeter() {
+        return 2*PI;
+    }
 };
 
 class Circle: public Shape { // Define a derived class named Circle inheriting from Shape
@@ -26,9 +28,9 @@ public:
     }
 
     // Override the virtual member function to calculate the perimeter
-    double calculatePerimeter() const override {
+    /*double calculatePerimeter() const override {
         return 2 * PI * radius; // Calculate the perimeter of the circle using the radius
-    }
+    }*/
 };
 
 class Rectangle: public Shape { // Define a derived class named Rectangle inheriting from Shape
@@ -46,7 +48,7 @@ public:
     }
 
     // Override the virtual member function to calculate the perimeter
-    double calculatePerimeter() const override {
+    double calculatePerimeter()  {
         return 2 * (length + width); // Calculate the perimeter of the rectangle using its length and width
     }
 };
@@ -69,7 +71,7 @@ public:
     }
 
     // Override the virtual member function to calculate the perimeter
-    double calculatePerimeter() const override {
+    double calculatePerimeter() {
         return side1 + side2 + side3; // Calculate the perimeter of the triangle using its sides
     }
 };

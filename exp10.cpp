@@ -16,6 +16,7 @@ int main()
 
     fout.open("sample.txt");
 
+
     // Execute a loop if file successfully opened
     while (fout)
     {
@@ -37,7 +38,7 @@ int main()
     ifstream fin;
 
     // By default open mode = ios::in mode
-    fin.open("sample.txt");
+    fin.open("exp10.cpp");
 
     // Execute a loop until EOF (End of File)
     while (getline(fin, line))
