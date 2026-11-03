@@ -14,7 +14,7 @@ int main()
     // To append the content, open in ios::app
     // fout.open("sample.txt", ios::app);
 
-    fout.open("sample.txt");
+    fout.open("darshan");
 
 
     // Execute a loop if file successfully opened
@@ -38,7 +38,7 @@ int main()
     ifstream fin;
 
     // By default open mode = ios::in mode
-    fin.open("exp10.cpp");
+    fin.open("sample");
 
     // Execute a loop until EOF (End of File)
     while (getline(fin, line))
